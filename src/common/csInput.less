@@ -1,0 +1,40 @@
+/**
+ * input组件
+ */
+.csInput{
+  height: 32px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #E0E6ED;
+  border-radius: 2px;
+  color: #283039;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: border-color .25s ease-in-out;
+
+  &:hover,
+  &:focus{
+    outline: none;
+    border-color: #0074FF;
+    box-shadow: 0 1px 6px 0 rgba(0,116,255,0.30);
+  }
+
+  &:disabled,
+  &.disabled{
+    background-color: #F6F8FC;
+    border-color: #E0E6ED;
+    cursor: not-allowed;
+    color: #BEC1C9;
+    box-shadow: none;
+  }
+
+  &.error{
+    border-color: #F52F3E;
+    box-shadow: 0 1px 6px 0 rgba(245,47,62,0.30);
+  }
+
+}
+
+.csInput[type=textarea]{
+  resize: none;
+}

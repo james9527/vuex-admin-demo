@@ -1,0 +1,68 @@
+/**
+ * button 组件
+ */
+._button{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 86px;
+  height: 32px;
+  // line-height: 32px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.25 ease-in-out;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  user-select: none;
+
+  &:focus{
+    outline: none;
+    text-decoration: none;
+  }
+}
+.csButton:extend(._button){
+  display: inline-block;
+  color: #fff;
+  background-color: #0074FF;
+  box-shadow: 0 4px 6px 0 rgba(0,116,255,0.30);
+
+  &:hover{
+    background-color: #006DEF;
+    box-shadow: 0 4px 6px 0 rgba(0,116,255,0.30);
+  }
+
+  &:active{
+    background-color: #006EEF;
+    box-shadow: inset 0 5px 10px 0 rgba(0,0,0,0.10);
+  }
+  &.disabled,
+  &[disabled]{
+    background-color: #9FCBFF;
+    cursor: not-allowed;
+    box-shadow: 0 4px 6px 0 rgba(0,116,255,0.30);
+  }
+}
+.csButton-ghost:extend(._button){
+  border: 1px solid #E0E6ED;
+  color: #283039;
+  background-color: #fff;
+
+  &:hover{
+    background-color: #F6F8FC;
+  }
+  &:active{
+    background-color: #F6F8FC;
+    border: 1px solid #E0E6ED;
+    box-shadow: inset 0 3px 10px 0 rgba(0,0,0,0.05);
+  }
+  &.disabled,
+  &[disabled]{
+    border: 1px solid #E0E6ED;
+    color: #BEC1C9;
+    background-color: #FFF;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+}

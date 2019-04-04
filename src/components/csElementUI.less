@@ -1,0 +1,314 @@
+/**
+ * ElementUI样式重置文件
+ */
+:focus {
+  outline: none;
+}
+
+.el-tabs__active-bar {
+  background-color: #0074ff;
+}
+.el-tabs__item.is-active {
+  color: #0074ff;
+}
+.el-pager li.active {
+  color: #0074ff;
+}
+
+.el-textarea__inner,
+.el-input__inner {
+  &:hover {
+    border-color: #0074ff!important;
+    box-shadow: 0 1px 6px 0 rgba(0, 116, 255, 0.3);
+  }
+  &:focus {
+    outline: none;
+    border-color: #0074ff;
+    box-shadow: 0 1px 6px 0 rgba(0, 116, 255, 0.3);
+  }
+  &:disabled {
+    border-color: #e0e6ed;
+    cursor: not-allowed;
+    background-color: #f6f8fc;
+  }
+}
+.el-select:hover .el-input__inner {
+  border-color: #0074ff;
+  box-shadow: 0 1px 6px 0 rgba(0, 116, 255, 0.3);
+}
+.el-input__icon {
+  line-height: 35px;
+}
+.el-textarea__inner:disabled,
+.el-input__inner:disabled {
+  box-shadow: none;
+}
+.el-input-number__decrease,
+.el-input-number__increase {
+  top: 5px;
+}
+.el-input-number .el-input-number__decrease,
+.el-input-number .el-input-number__increase {
+  height: 30px;
+  line-height: 30px;
+}
+.el-textarea__inner {
+  height: 100%;
+}
+
+.el-tabs {
+  .el-tabs__item {
+    width: 130px;
+    box-sizing: border-box;
+    text-align: center;
+    // padding: 0px;
+  }
+  .el-tabs__header {
+    margin-bottom: 20px;
+  }
+}
+
+.el-select .el-input__inner {
+  color: #283039;
+}
+.el-popper[x-placement^='bottom'] {
+  margin-top: 6px;
+}
+.el-select-dropdown {
+  border: none;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+
+  .popper__arrow {
+    display: none;
+  }
+}
+.el-select-dropdown__item.selected {
+  color: #0074ff;
+  font-weight: 400;
+}
+
+// 单选
+.el-radio__input.is-checked+.el-radio__label{
+  color: #0074FF;
+}
+.el-radio__label{
+  font-size: 12px;
+  color: #283039;
+  line-height: 16px;
+}
+
+/*******************************************************************************
+ * el-dialog 组件
+ */
+.el-dialog__wrapper{
+  background: rgba(22, 29, 38, 0.7);
+}
+.el-dialog {
+  width: 440px;
+}
+.el-dialog__header {
+  padding: 20px 10px 10px;
+  border-bottom: 2px solid #e0e6ed;
+  margin: 0 20px;
+}
+.el-dialog__headerbtn {
+  display: none;
+}
+.el-input__inner {
+  height: 32px;
+  line-height: 32px;
+  top: 1px;
+  position: relative;
+  border-radius: 2px;
+}
+.el-dialog__footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+/*******************************************************************************
+ * el-popover 组件
+ */
+.el-popover{
+  border: none;
+  padding: 20px;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.05);
+  font-size: 14px;
+  color: #717580;
+  line-height: 20px;
+  margin-top: 8px;
+  width: auto!important;
+}
+.el-popper .popper__arrow{
+  display: none;
+}
+.el-popover {
+  .el-popover__title {
+    // width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-align: left;
+    // padding: 6px 20px;
+    border-bottom: 1px solid #e0e6ed;
+    margin: 0 8px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+}
+.el-popover:nth-last-child(1) {
+  border-bottom: none;
+}
+.el-popover--plain {
+  width: 140px;
+  padding: 0;
+  margin-top: 17px;
+}
+
+/*******************************************************************************
+ * el-tree 组件
+ */
+.el-tree-node__content {
+  height: 32px;
+  line-height: 32px;
+}
+.el-tree-node__expand-icon {
+  // border:1px solid #BEC1CA;
+  width: 14px;
+  height: 14px;
+}
+.el-tree-node__expand-icon {
+  margin-right: 8px;
+}
+.el-icon-caret-right {
+  color: #bec1ca;
+}
+.is_leaf {
+  color: transparent;
+}
+
+/*******************************************************************************
+ * el-table 组件
+ */
+.el-table {
+  font-size: 12px;
+  tr {
+    background-color: transparent;
+  }
+}
+.table-header .el-checkbox {
+  display: none;
+}
+.el-table .el-table__header-wrapper th {
+  background: #f6f8fc;
+  color: #bec1c9;
+  font-weight: 400;
+  border-bottom: none;
+}
+.el-table__body-wrapper {
+  color: #717580;
+}
+
+/*******************************************************************************
+ * el-pagination 组件
+ */
+.el-pagination {
+  color: #717580;
+
+  .el-pager li {
+    width: 28px;
+    min-width: auto;
+    height: 28px;
+    border-radius: 100%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    // background-color: red;
+  }
+
+  .btn-next,
+  .btn-prev,
+  button:disabled {
+    text-align: center;
+    width: 28px;
+    min-width: auto;
+    height: 28px;
+    border-radius: 100%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+    // background-color: red;
+    padding-right: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #9297a7;
+  }
+  button.btn-prev {
+    padding-right: 5px;
+  }
+  button.btn-next {
+    padding-left: 5px;
+  }
+
+  .el-select .el-input .el-input__inner {
+    background: #ffffff;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #717580;
+  }
+  .el-pagination__total {
+    color: #bec1c9;
+  }
+  .el-pagination__jump {
+    margin-left: 15px;
+    color: #717580;
+
+    .el-input__inner {
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+      border-radius: 100px;
+      border: none;
+    }
+  }
+}
+
+/*******************************************************************************
+ * el-color-picker 组件
+ */
+.el-color-dropdown__btns .el-button {
+  padding: 7px 15px;
+}
+
+/*******************************************************************************
+ * el-date-picker 组件
+ */
+.el-date-editor .el-range__icon{
+  line-height: 26px;
+}
+.el-date-editor .el-range-separator{
+  line-height: 26px;
+}
+.el-date-editor .el-range__close-icon{
+  line-height: 26px;
+}
+.el-date-range-picker__content.is-left{
+  border-right: none;
+}
+
+/*******************************************************************************
+ * el-tooltip 组件
+ */
+.el-tooltip__popper.is-dark{
+  opacity: 0.61;
+  background: #000000;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.05);
+}
+
+/*******************************************************************************
+ * v-loading 组件
+ */
+.el-loading-mask {
+  z-index: 1000;
+}
