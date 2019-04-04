@@ -6,7 +6,14 @@ import ruleList from './store/ruleList'
 
 import App from './App.vue'
 
-import ElementUI from 'element-ui'
+// import ElementUI from 'element-ui'
+import {
+  Table,
+  TableColumn,
+  Pagination,
+  Button,
+  Input
+} from 'element-ui'
 // import ECharts from 'echarts'
 import './common/reset.css'
 import './common/csInput.less'
@@ -27,8 +34,13 @@ import filterByAuthority from './router/filterByAuthority'
 import routerMap from './router'
 
 Vue.use(VueRouter)
-Vue.use(ElementUI)
+// Vue.use(ElementUI)
 // Vue.use(ECharts)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Pagination)
+Vue.use(Button)
+Vue.use(Input)
 
 /**
  * 开启|关闭权限管理
